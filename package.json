@@ -1,35 +1,24 @@
 {
-  "name": "discord-anti-spam",
-  "version": "2.5.1",
-  "description": "An easy to setup package that help you integration of anti-spam feature in your discord bot.",
-  "main": "index.js",
+  "name": "tickety",
+  "version": "1.0.0",
+  "description": "A simple ticket bot",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "discord",
-    "spam",
-    "anti-spam",
-    "discord.js",
-    "antispam",
-    "moderation",
-    "bot",
-    "plugin",
-    "module"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Michael-J-Scofield/discord-anti-spam.git"
+  "engines": {
+     "node": "12.x"
   },
-  "bugs": {
-    "url": "https://github.com/Michael-J-Scofield/discord-anti-spam/issues"
-  },
-  "homepage": "https://github.com/Michael-J-Scofield/discord-anti-spam#readme",
-  "author": "Michael Scofield",
-  "license": "MIT",
-  "devDependencies": {
-    "jsdoc": "^3.6.3",
-    "minami": "Androz2091/minami"
+  "author": "BlackKnight683",
+  "license": "ISC",
+  "dependencies": {
+    "better": "^0.1.0",
+    "cpu-stat": "^2.0.1",
+    "discord.js": "^12.4.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1",
+    "os": "^0.1.1"
   }
 }

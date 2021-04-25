@@ -1,63 +1,32 @@
-<p align="center"><a href="https://nodei.co/npm/discord-anti-spam/"><img src="https://nodei.co/npm/discord-anti-spam.png"></a></p>
+# 🎫 Ticket Bot By BlackKnight683
 
-# discord-anti-spam.js
+## ❔ About
+This is a simple ticket bot created for a video and as per demand on my [Youtube Channel](https://youtube.com/c/BlackKnight683) :P
+It was made in what like 2 days so don't expect some super cool features.....
 
-A simple module with quick setup and different options to implement anti-spam features in your bot.
++ Find a super cool feature ticket bot in my [Discord server](https://discord.gg/S2GGa23)
 
-## Installation
+## 💬 Commands
 
-To install this module type the following command in your console:
+Command | Description
+------------ | -------------
+add | Adds a member to a specified ticket.
+close | Closes the ticket.
+delete | Delete a specified ticket.
+help | Shows the help menu.
+new | Creates a new ticket.
+open | Re-opens a ticket.
+ping | Shows the bot's latency.
+remove | Removes a member to a specified ticket.
+uptime | Grabs the uptime of the bot.
 
-```
-npm i discord-anti-spam
-```
-
-## Documentation
-
-You can see the package documentation [**here**](https://discord-anti-spam.js.org).
-
-## Example
-
-Example of a basic bot handling spam messages using this module.
-
+## Startup Command
 ```js
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const AntiSpam = require('discord-anti-spam');
-const antiSpam = new AntiSpam({
-	warnThreshold: 3, // Amount of messages sent in a row that will cause a warning.
-	muteThreshold: 4, // Amount of messages sent in a row that will cause a mute
-	kickThreshold: 7, // Amount of messages sent in a row that will cause a kick.
-	banThreshold: 7, // Amount of messages sent in a row that will cause a ban.
-	maxInterval: 2000, // Amount of time (in milliseconds) in which messages are considered spam.
-	warnMessage: '{@user}, Please stop spamming.', // Message that will be sent in chat upon warning a user.
-	kickMessage: '**{user_tag}** has been kicked for spamming.', // Message that will be sent in chat upon kicking a user.
-	muteMessage: '**{user_tag}** has been muted for spamming.',// Message that will be sent in chat upon muting a user.
-	banMessage: '**{user_tag}** has been banned for spamming.', // Message that will be sent in chat upon banning a user.
-	maxDuplicatesWarning: 6, // Amount of duplicate messages that trigger a warning.
-	maxDuplicatesKick: 10, // Amount of duplicate messages that trigger a warning.
-	maxDuplicatesBan: 12, // Amount of duplicate messages that trigger a warning.
-	maxDuplicatesMute: 8, // Ammount of duplicate message that trigger a mute.
-	ignoredPermissions: [ 'ADMINISTRATOR'], // Bypass users with any of these permissions.
-	ignoreBots: true, // Ignore bot messages.
-	verbose: true, // Extended Logs from module.
-	ignoredMembers: [], // Array of User IDs that get ignored.
-	muteRoleName: "Muted", // Name of the role that will be given to muted users!
-	removeMessages: true // If the bot should remove all the spam messages when taking action on a user!
-	// And many more options... See the documentation.
-});
-
-client.on('ready', () => console.log(`Logged in as ${client.user.tag}.`));
-
-client.on('message', (message) => antiSpam.message(message)); 
-
-client.login('YOUR_SUPER_SECRET_TOKEN');
+npm i --production && node index.js
 ```
 
-## Support Server
+## 🙋‍Contributing
+If you would like t contribute, please fork this repository and submit a pull request! You can also join the [Discord server](https://discord.gg/S2GGa23) or contact me directly on discord at `•OofyOofOof•#2018`. Anyone is welcome to suggest new features and improve code quality!
 
-Join our [Support Server](https://discord.gg/KQgDfGr) where we help you with issues regarding the module.
-
-## Bug Reports
-
-If you have any bugs or trouble setting the module up, feel free to open an issue on [Github](https://github.com/Michael-J-Scofield/discord-anti-spam)
+## 📄 License
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/zhon12345/Tavern_Keeper/blob/master/LICENSE) file for details.
