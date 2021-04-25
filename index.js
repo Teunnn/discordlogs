@@ -11,4 +11,4 @@ client.aliases = new Collection();
 });
 
 keepAlive();
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.token);
